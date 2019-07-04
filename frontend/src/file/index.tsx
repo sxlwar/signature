@@ -36,7 +36,7 @@ export function FileFormComponent({ fileChange }: FileFormComponentProps): JSX.E
     >
       <label>
         <span>search:</span>
-        <input type="text" ref={inputRef} placeholder="File name. Input 'test' then click button below" />
+        <input type="text" ref={inputRef} placeholder="File name. Input 'test' then click preview button" />
       </label>
       <button onClick={getFile} style={{ flex: 1 }}>
         preview
