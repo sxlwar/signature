@@ -2,13 +2,13 @@
 
 ## IMPORTANT
 
-**When starting this project, ACCESS_TOKEN in the env file in the config directory may have expired. You need to get your own ACCESS_TOKEN from [docusign](https://developers.docusign.com), and remember to replace the ACCOUNT_ID with your own id.**
+**When starting this project, ACCESS_TOKEN in the env file in the config directory maybe expired. You need to get your own ACCESS_TOKEN from [docusign](https://developers.docusign.com), remember to replace the ACCOUNT_ID with your own id too.**
 
 ## REPO
 
-Note that the link given by the official website may points to an old repo, which corresponds to the 4 version. There is a package called docusign in [npm](https://www.npmjs.com), it has been deprecated. You need to download the new package called docusign-esign.
+Note that the link given by the official website may points to an old repo, which corresponds to version 4.0. There is a package called docusign in [npm](https://www.npmjs.com/package/docusign), it has been deprecated. Download the latest package called docusign-esign.
 
-docusign is developed by JavaScript. So far,the official has **not** written its declaration files. You can write your own declaration file if you mind for happy coding.
+docusign is developed by JavaScript, so far, the official has **not** written its declaration files. You can write your own declaration file if you mind for happy coding.
 
 ## QUESTIONS
 
@@ -18,7 +18,7 @@ Q1: How do I access the Docusign documents that I signed? **Users care**
 
 Q2: How do I access the Docusign documents that user signed? **Developer care**
 
-> Developer can get the document by [EnvelopeFormData](https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeFormData/get) api. This api needs two parameters, accountId and envelopedId. AccountId is the same as ACCOUNT_ID in env configuration. EnvelopedId is returned by createEnvelope method which used to send an email to user.
+> Developer can get the document by [EnvelopeFormData](https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeFormData/get) api. The api needs two parameters, accountId and envelopedId. AccountId is the same as ACCOUNT_ID in env configuration. EnvelopedId is returned by createEnvelope method which used to send an email to user.
 
 ## Run
 
@@ -32,7 +32,7 @@ After clone this repo, cd backend directory
 npm install
 ```
 
-In project directory, run:
+In backend directory, run:
 
 ```bash
 npm run start:dev
@@ -50,11 +50,11 @@ npm run build
 npm run webpack
 ```
 
-Run command above to package the project, automatically replace when a file changes in src directory.
+Run command above to package the project, automatically replace when file changes in backend/src/ directory.
 
 ### Start frontend
 
-cd fronted directory
+cd frontend directory
 
 - dev
 
