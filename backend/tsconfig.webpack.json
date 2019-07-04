@@ -1,0 +1,8 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./dest",
+        "declarationDir": "./dest/typings/",
+        "declarationMap": true,
+    }
+} 
